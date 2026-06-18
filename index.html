@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Nikki!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <h1>Happy Birthday, Nikki!</h1>
+      <p class="subtitle">Wishing you a day filled with love, laughter, and unforgettable moments.</p>
+    </header>
+
+    <main class="content">
+      <section class="card greeting-card">
+        <h2>To my best friend</h2>
+        <p>Today is your day — let every moment sparkle like the amazing person you are.</p>
+        <p class="message">Thank you for being kind, fun, and always there. Cheers to many more adventures together!</p>
+      </section>
+
+      <section class="card details-card">
+        <h2>Celebrate with style</h2>
+        <ul>
+          <li>Colorful balloons and joyful moments</li>
+          <li>Sparkling confetti and endless laughter</li>
+          <li>Big smiles and good vibes</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Nikki 💖 - May your special day be as wonderful and amazing as you are!</p>
+      <button id="partyButton">Celebrate!</button>
+    </footer>
+
+    <div id="celebrationBurst" class="celebration-burst">
+      <div class="burst-text">Nikki, you light up every room!</div>
+    </div>
+  </div>
+
+  <div id="successScreen" class="success-screen hidden">
+    <div class="success-card card">
+      <h2>Dream bigger, Nikki</h2>
+      <p>May this year bring you closer to your dreams and fill your life with happiness and success. I believe in you, Nikki. You are capable of achieving anything you set your mind to. and you have the strength to overcome every challenge. Keep shining, stay fearless, and never stop believing in yourself.</p>
+      <p class="success-note">Your brightest days are ahead: stronger, wiser, and full of fresh possibilities.</p>
+      <div class="screen-actions">
+        <button id="backToStartButton" class="back-button">Back</button>
+        <button id="partyTimeButton">Party Time!</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="confirmOverlay" class="confirm-overlay hidden">
+    <div class="confirm-card card">
+      <h2>Ready for cake?</h2>
+      <p>Do you want to cut the cake now and celebrate your next chapter?</p>
+      <div class="screen-actions">
+        <button id="confirmNoButton" class="back-button">No</button>
+        <button id="confirmYesButton">Yes</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="treasureOverlay" class="treasure-overlay hidden">
+    <div class="treasure-card card">
+      <h2>One more thing...</h2>
+      <p>Will you return my treasure box?</p>
+      <div class="screen-actions">
+        <button id="treasureNoButton" class="back-button">No</button>
+        <button id="treasureYesButton">Yes</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="punchOverlay" class="reaction-overlay hidden">
+    <div class="reaction-content">
+      <div class="emoji-display">👊</div>
+      <p class="reaction-text">Ouch!</p>
+    </div>
+  </div>
+
+  <div id="thankYouOverlay" class="reaction-overlay hidden">
+    <div class="reaction-content">
+      <p class="thank-you-text">Thank You</p>
+      <p class="reaction-subtext">You made my day!</p>
+    </div>
+  </div>
+
+  <div id="finalCakeMessageOverlay" class="reaction-overlay hidden">
+    <div class="reaction-content">
+      <p class="thank-you-text">Once again, happy birthday Nikki!</p>
+      <p class="reaction-subtext">The celebration continues with cake cutting.</p>
+    </div>
+  </div>
+
+  <div id="cakeOverlay" class="cake-overlay hidden">
+    <div class="cake-card card">
+      <h2>Cake Cutting Time!</h2>
+      <p>Celebrate the moment and step into the next sweet adventure.</p>
+      <div class="cake-stage">
+        <div class="cake">
+          <div class="frosting"></div>
+          <div class="candle candle-1"></div>
+          <div class="candle candle-2"></div>
+          <div class="candle candle-3"></div>
+          <div class="cake-base"></div>
+          <div class="slice"></div>
+        </div>
+        <div class="knife"></div>
+      </div>
+      <div class="cake-message">Cutting into your next celebration!</div>
+      <div id="cakeCongratsMessage" class="cake-congrats hidden">Once again, happy birthday!</div>
+      <div id="birthdayFinalMessage" class="final-message hidden">Once again, happy birthday!</div>
+      <div class="screen-actions">
+        <button id="backToSuccessButton" class="back-button">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+  <script src="script.js?cache=3"></script>
+</body>
+</html>
